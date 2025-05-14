@@ -18,7 +18,7 @@ This project is a Retrieval-Augmented Generation (RAG) app built with [LangChain
 ## 🧪 Tech Stack
 
 - `LangChain`
-- `OpenAI Whisper` (via `youtube-transcript-api`)
+- `OpenAI Whisper` (with audio downloaded via `pytube`)
 - `OpenAI GPT-4o-mini`
 - `Pinecone` for vector storage
 - `Gradio` for the chat interface
@@ -26,9 +26,22 @@ This project is a Retrieval-Augmented Generation (RAG) app built with [LangChain
 ---
 
 ## 🚀 How to Run
+1. Clone the repository, create a virtual environment, and install the required packages:
 
 ```bash
 git clone https://github.com/yourusername/rag-naval-app.git
+$ python3 -m venv .venv
+$ source .venv/bin/activate
 cd rag-naval-app
 pip install -r requirements.txt
+```
+2. Set up environment variables. Create a `.env` file with the following variables:
+
+```bash
+OPENAI_API_KEY = [ENTER YOUR OPENAI API KEY HERE]
+PINECONE_API_KEY = [ENTER YOUR PINECONE API KEY HERE]
+PINECONE_API_ENV = [ENTER YOUR PINECONE API ENVIRONMENT HERE]
+```
+3. Run the application:
+```bash
 python app/run_app.py
