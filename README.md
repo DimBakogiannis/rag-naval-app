@@ -1,22 +1,3 @@
-
-# Building a RAG application from scratch
-
-This is a step-by-step guide to building a simple RAG (Retrieval-Augmented Generation) application using Pinecone and OpenAI's API. The application will allow you to ask questions about any YouTube video.
-
-## Setup
-
-1. Create a virtual environment and install the required packages:
-
-```bash
-$ python3 -m venv .venv
-$ source .venv/bin/activate
-$ pip install -r requirements.txt
-```
-
-2. Create a free Pinecone account and get your API key from [here](https://www.pinecone.io/).
-
-3. Create a `.env` file with the following variables:
-=======
 # RAG App: Exploring Ideas with Naval Ravikant using LangChain + GPT-4o-mini
 
 This project is a Retrieval-Augmented Generation (RAG) app built with [LangChain](https://www.langchain.com/), [OpenAI GPT-4o-mini](https://openai.com/), and [Gradio](https://www.gradio.app/). Inspired by Santiago Valdarrama's YouTube RAG demo, the goal is to make long-form content, like philosophical interviews, more interactive.
@@ -55,16 +36,13 @@ cd rag-naval-app
 pip install -r requirements.txt
 ```
 2. Set up environment variables. Create a `.env` file with the following variables:
->>>>>>> 8cd472c46b3fddcb104692417e0fd3bf0770dde0
 
 ```bash
 OPENAI_API_KEY = [ENTER YOUR OPENAI API KEY HERE]
 PINECONE_API_KEY = [ENTER YOUR PINECONE API KEY HERE]
 PINECONE_API_ENV = [ENTER YOUR PINECONE API ENVIRONMENT HERE]
 ```
-<<<<<<< HEAD
-=======
 3. Run the application:
 ```bash
 python app/run_app.py
->>>>>>> 8cd472c46b3fddcb104692417e0fd3bf0770dde0
+```
