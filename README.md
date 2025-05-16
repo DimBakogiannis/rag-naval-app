@@ -44,7 +44,7 @@ PINECONE_API_ENV = [ENTER YOUR PINECONE API ENVIRONMENT HERE]
 ```
 3. Run the application:
 ```bash
-python app/run_app.py
+python app.py
 ```
 ---
 ## 🖼️ What the App Looks Like in Action
